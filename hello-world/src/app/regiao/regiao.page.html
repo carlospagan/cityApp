@@ -1,0 +1,19 @@
+<ion-toolbar class="top">
+  <div class="header">
+    <img src="../../assets/unknown.png" width="auto" height="70vh">
+  </div>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-scroll scrollY="true" >
+
+    <div class="content">
+      <p class="title"> SELECIONE UMA REGIÃO</p>
+      <ion-card class="card" *ngFor="let regiao of getRegioes()" (click)="goToPage(regiao)">
+        <img class="img" [src]="regiao.imgUrl" width="100%" height="100%">
+        <p>{{regiao.name}}</p>
+      </ion-card>
+    </div>
+  </ion-scroll>
+</ion-content>
+

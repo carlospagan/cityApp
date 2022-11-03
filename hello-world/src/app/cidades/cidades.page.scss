@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav{
+    color: white;
+    padding-top: 2vh;
+    margin-bottom: -1vh;
+    padding-left: 3vw;
+  }
+
+  ion-toolbar {
+    --background: #19133E;
+    --color: white;
+  
+    --min-height: 60px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+
+.viewButton{
+  font-size: 12px;
+  font-weight: 700;
+  height: 7vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-bottom: 2vh;
+}
+
+ion-card-content{
+  font-size: 10px;
+}
+
+ion-accordion-group{
+  padding-left: 4.5vw;
+  padding-right: 4.5vw;
+
+  margin-bottom: 4vh;
+}

@@ -1,0 +1,25 @@
+<ion-toolbar>
+    <div class="header">
+      <img src="../../assets/unknown.png" width="auto" height="70vh">
+    </div>
+</ion-toolbar>
+<ion-content >
+  <ion-breadcrumbs class="nav">
+    <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+    <ion-breadcrumb href="#cidades" >Cidades</ion-breadcrumb>
+    <ion-breadcrumb href="#lista" style="font-weight: normal;">Lista</ion-breadcrumb>
+  </ion-breadcrumbs>
+  <ion-card class="card" *ngFor="let cidade of cidades">
+    <img class="img" [src]="cidade.cityImage" />
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>{{cidade.cityName}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{cidade.cityShortDescription}}
+    </ion-card-content>
+    <ion-button class="viewButton" (click)="goToPage()" expand="block">VISUALIZAR CIDADE</ion-button>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-toolbar> 
+  <div class="header">
+    <img src="../../assets/unknown.png" width="auto" height="70vh">
+  </div>
+</ion-toolbar>
+<ion-content>
+  <div class="content">
+    <ion-item color="secondary">
+      <ion-label position="floating">LOGIN</ion-label>
+      <ion-input [(ngModel)]="userEmail"></ion-input>
+    </ion-item>
+    <ion-item color="secondary">
+      <ion-label position="floating">SENHA</ion-label>
+      <ion-input [(ngModel)]="userPassword" type="password" ></ion-input>
+    </ion-item>
+  </div>
+  <div class="buttons">
+    <ion-button (click)="onSubmit()" class="btn-registrar" expand="block" color="primary">ENTRAR</ion-button>
+    <a> NÃO TEM CONTA? <b>REGISTRE-SE </b></a>
+    </div>
+  
+</ion-content>

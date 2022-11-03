@@ -1,0 +1,47 @@
+
+  
+ion-toolbar {
+    --color: white;
+    --min-height: 70px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+.top{
+    --background: #19133E;
+}
+    
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    padding-left: 6vw;
+}
+
+.card{
+    height: 20vh;
+    width: 90vw;
+    background-color: rgb(5, 5, 5);
+}
+
+.content{
+    padding-left: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.card p{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.img{
+    opacity: 0.5;
+}

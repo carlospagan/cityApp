@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+ion-toolbar {
+    --background: #19133E;
+    --color: white;
+  
+    --min-height: 80px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+ion-content{
+    --background: #19133E;
+}
+
+ion-item{
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    --inner-border-width: 0px !important;
+}
+
+
+.content{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons{
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.btn-registrar{
+    width: 85%;
+    height: 6vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

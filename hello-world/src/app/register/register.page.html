@@ -1,0 +1,33 @@
+<ion-toolbar> 
+  <div class="header">
+    <img src="../../assets/unknown.png" width="auto" height="70vh">
+  </div>
+</ion-toolbar>
+<ion-content>
+    <div class="content">
+      <ion-item color="secondary">
+        <ion-label position="floating">NOME COMPLETO</ion-label>
+        <ion-input [(ngModel)]="userName"></ion-input>
+      </ion-item>
+      <ion-item color="secondary">
+        <ion-label position="floating">EMAIL</ion-label>
+        <ion-input [(ngModel)]="userEmail"></ion-input>
+      </ion-item>
+      <ion-item color="secondary">
+        <ion-label position="floating">SENHA</ion-label>
+        <ion-input [(ngModel)]="userPassword" type="password"></ion-input>
+      </ion-item>
+      <ion-item color="secondary">
+        <ion-label position="floating">UF</ion-label>
+        <ion-input [(ngModel)]="userUf"></ion-input>
+      </ion-item>
+      <ion-item color="secondary">
+        <ion-label position="floating">CIDADE</ion-label>
+        <ion-input [(ngModel)]="userCity"></ion-input>
+      </ion-item>
+    </div>
+    <div class="buttons">
+      <ion-button class="btn-registrar" expand="block" color="primary" (click)="onSubmit()">REGISTRAR</ion-button>
+      <ion-button (click)="goToLoginPage()" class="btn-voltar" expand="block" color="light">VOLTAR</ion-button>
+    </div>
+</ion-content>
